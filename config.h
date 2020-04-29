@@ -7,6 +7,7 @@ static const char *fonts[] = {
 	"monospace:size=13",
 	"IPAGothic:size=13",
 	"symbola:size=13"};
+
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 
 static const char *colors[SchemeLast][2] = {
@@ -16,27 +17,12 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeOut] = { "#d7d5d1", "#96A3A8" },
 };
 
-
-
-//static const char *colors[SchemeLast][2] = {
-//	/*     fg         bg       */
-//	[SchemeNorm] = { "#d3dae3", "#000000" },
-//	[SchemeSel] = { "#d3dae3", "#718AAA" },
-//	[SchemeOut] = { "#d3dae3", "#9DB1CE" },
-//};
-
-/*static const char *colors[SchemeLast][2] = {
-	     fg         bg
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
-	[SchemeOut] = { "#000000", "#00ffff" },
-};*/
-
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
-static const int vertpad            = 10;       /* vertical padding of bar */
-static const int sidepad            = 20;       /* horizontal padding of bar */
 
+static int instant = 1;
+static int sidepad = 20;
+static int vertpad = 10;
 /*
  * Characters not considered part of a word while deleting words
  * for example: " /?\"&[]"

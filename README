@@ -2,11 +2,6 @@ dmenu - dynamic menu
 ====================
 dmenu is an efficient dynamic menu for X.
 
-Personal Adjustments
---------------------
-This build has a history feature, can open a terminal window
-if command ends in "!" and is adjust to fit bar padding used in dwm.
-
 
 Requirements
 ------------
