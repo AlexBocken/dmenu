@@ -1,6 +1,17 @@
 /* See LICENSE file for copyright and license details. */
 /* Default settings; can be overriden by command line. */
 
+static int instant = 0;
+static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
+/* -fn option overrides fonts[0]; default X11 font or font set */
+static const char *fonts[] = {
+	"monospace:size=13",
+	"IPAGothic:size=13",
+	"symbola:size=13"};
+
+static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+
+// NORD COLORS:
 #define bblack "#000000"
 #define nord0 "#2E3440"
 #define nord1 "#3B4252"
@@ -18,27 +29,14 @@
 #define nord13 "#EBCB8B"
 #define nord14 "#A3BE8C"
 #define nord15 "#B48EAD"
-
-
-static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
-/* -fn option overrides fonts[0]; default X11 font or font set */
-static const char *fonts[] = {
-	"monospace:size=13",
-	"IPAGothic:size=13",
-	"symbola:size=13"};
-
-static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
-
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { nord4 , nord0 },
-	[SchemeSel] = { nord6, nord10 },
+ 	[SchemeSel] = { nord6, nord10 },
 };
-
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
 
-static int instant = 0;
 static int sidepad = 20;
 static int vertpad = 10;
 /*

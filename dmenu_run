@@ -1,7 +1,7 @@
 #!/bin/sh
 aliases=$HOME/.config/aliasrc
 
-source $aliases
+#. $HOME/.config/aliasrc
 termcmd="st -e"
 cachedir=${XDG_CACHE_HOME:-"$HOME/.cache"}
 if [ -d "$cachedir" ]; then
