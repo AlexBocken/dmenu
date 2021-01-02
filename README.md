@@ -28,3 +28,4 @@ This version of dmenu has a few personal changes:
 - dmenu_run uses a history file, can launch a terminal with said command by appending "!" to it
 - initial text patch
 - offset to match bar offset I use in dwm
+- multiselection patch
