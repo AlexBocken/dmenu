@@ -510,6 +510,10 @@ insert:
 			cleanup();
 			exit(0);
 		}
+		if (sel && sel->right && (sel = sel->right) == next) {
+			curr = next;
+			calcoffsets();
+		}
 		break;
 	case XK_Right:
 		if (text[cursor] != '\0') {
