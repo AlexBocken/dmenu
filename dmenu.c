@@ -503,7 +503,7 @@ insert:
 			for (int i = 0;i < selidsize;i++)
 				if (selid[i] != -1 && (!sel || sel->id != selid[i]))
 					puts(items[selid[i]].text);
-			if (sel && !(ev->state & ShiftMask))
+			if (sel)
 				puts(sel->text);
 			else
 				puts(text);
