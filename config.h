@@ -33,7 +33,7 @@ static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { nord4 , nord0 },
  	[SchemeSel] = { nord6, nord10 },
-	[SchemeOut] = { nord8, nord10 },
+	[SchemeOut] = { nord0, nord10},
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
