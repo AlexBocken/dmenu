@@ -9,6 +9,7 @@ static const char *fonts[] = {
 	"IPAGothic:size=13",
 	"symbola:size=13",
 	"Font Awesome 6 Free:size=13",
+	"Font Awesome 6 Free Solid:size=10",
 	"Font Awesome 6 Brands:size=13"
 };
 
